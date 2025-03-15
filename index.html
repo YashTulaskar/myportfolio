@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/YT.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+
+
+    <!--<link href='../cdn.jsdelivr.net/npm/boxicons%402.0.5/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <title>YASH TULASKAR</title>
+</head>
+
+<body>
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">YASH TULASKAR</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">YASH</span><br><span
+                        id="typing-animation"></span>
+
+                    <script>
+
+                        const typingAnimationElement = document.getElementById('typing-animation');
+
+
+                        const typingTexts = [
+                            'Software Engineer ',
+                            'Cloud Engineer  ',
+                            'DevOps Engineer   ',
+                        ];
+
+
+                        function playTypingAnimation(text) {
+
+                            for (let i = 0; i < text.length; i++) {
+                                setTimeout(() => {
+                                    typingAnimationElement.textContent += text[i];
+                                }, i * 200);
+                            }
+
+
+                            setTimeout(() => {
+                                typingAnimationElement.textContent = '';
+                                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                            }, text.length * 200);
+                        }
+
+
+                        playTypingAnimation(typingTexts[0]);
+                    </script>
+                    <br>
+                </h1>
+
+
+
+                <a href="https://drive.google.com/file/d/18XlQYsCwkz_BNcY3Tuv6eLnii0CqBZtf/view?usp=sharing"
+                    class="button">Resume</a>
+                <a href="tel:+7710973104" class="button">Contact Me</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/yash-tulaskar" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/YashTulaskar" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                </a>
+
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="img/pic.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="img/fs.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">About Me</h2>
+                    <div class="skill-mf">
+                        <ul class="about__text mt-4 px-md-0 px-2">
+                            <li class="d-flex"><span><strong>Name:</strong></span> <span>Yash Hemant Tulaskar</span>
+                            </li>
+                            <li class="d-flex"><span><strong>Job Role:</strong></span> <span>Senior Software Engineer
+                                </span></li>
+                            <li class="d-flex"><span><strong>Education:</strong></span> <span>Bachelor of
+                                    Engineering</span></li>
+                            <li class="d-flex"><span><strong>Address:</strong></span> <span>Mumbai,India</span></li>
+                            <li class="d-flex"><span><strong>Language:</strong></span> <span>English, Hindi</span></li>
+                            <li class="d-flex"><span><strong>Skills:</strong></span> <span>Cloud Operations,Linux,&amp;
+                                    Automation</span></li>
+                            <li class="d-flex"><span><strong>Frontend:</strong></span> <span>HTML, CSS &amp;
+                                    Bootstrap</span></li>
+                            <li class="d-flex"><span><strong>Interest:</strong></span> <span>Traveling, Cycling</span>
+                            </li>
+                            <li class="d-flex"><span><strong>Experience:</strong></span> <span>2 years 8 months</span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <script>
+                        function updateExperience(startDate) {
+                            const start = new Date(startDate);
+                            const now = new Date();
+                            const diff = new Date(now - start);
+                            const years = diff.getUTCFullYear() - 1970;
+                            const months = diff.getUTCMonth();
+                            const days = diff.getUTCDate() - 1;
+                            document.getElementById('experience').innerText = `${years} Years ${months} Months ${days} Days`;
+                        }
+
+
+                        updateExperience('2022-01-01');
+                    </script>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+                <div class="experience__timeline">
+                    <div class="experience__item">
+                        <div class="experience__content-wrapper">
+                            <div class="experience__logo-container">
+                                <img src="img/CAP.PA_BIG.png" alt="Company Logo" class="experience__logo">
+                            </div>
+                            <div class="experience__details">
+                                <div class="experience__header">
+                                    <h3 class="experience__title">Cloud Engineer</h3>
+                                    <span class="experience__company"><a href="https://www.capgemini.com/"
+                                            target="_blank">Capgemini</a></span>
+                                    <span class="experience__date">Sept 2022 - Present</span>
+                                </div>
+                                <div class="experience__content">
+                                    <ul class="experience__description">
+                                        <li>Implemented and maintained cloud infrastructure on AWS, GCP & Azure</li>
+                                        <li>Troubleshot and resolved cloud infrastructure issues, reducing downtime and
+                                            improving system reliability</li>
+                                        <li>Manage patching, system upgrades, and security compliance across cloud servers</li>
+                                        <li>Automated infrastructure deployment using Terraform</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="skills section" id="skills">
+
+
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-ship skills__icon'></i>
+                            <span class="skills__name">Cloud Infrastructure Operations</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-cog skills__icon'></i>
+                            <span class="skills__name">AWS , GCP & AZURE</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-terminal skills__icon'></i>
+                            <span class="skills__name">Linux & Shell</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-data skills__icon'></i>
+                            <span class="skills__name">Terraform</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-cylinder skills__icon'></i>
+                            <span class="skills__name">MySql</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">Computer Networking</span>
+                        </div>
+
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-bootstrap skills__icon'></i>
+                            <span class="skills__name">Windows Server Administration</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="certifications__container">
+                <h2 class="section-title">Certifications</h2>
+
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <img src="img/AWS-Certified-Solutions-Architect-Associate_badge.png"
+                            alt="AWS Certification Badge">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/ACE.png" alt="Certification 4">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/DP 900.png"
+                            alt="Certification 2">
+                    </div>
+                    <div class="cert-item">
+                        <img src="img/AZ 104.png" alt="Certification 3">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                    <input type="hidden" name="access_key" value="1e183c20-8cdb-47c5-8c84-3f3881e64ca5">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <input type="text" placeholder="Name" name="name" class="contact__input" required>
+                    <input type="email" placeholder="Email" name="email" class="contact__input" required>
+                    <textarea name="message" placeholder="Message" id="" cols="0" rows="10" class="contact__input"
+                        required></textarea>
+                    <button type="submit" class="contact__button button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <p class="footer__title">Thank You</p>
+        <div class="footer__social">
+
+            <a href="tel:+917710973104" class="footer__icon"><i class='bx bxs-phone'></i></a>
+            <a href="mailto:tulaskar87@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
+            <a href="https://www.linkedin.com/in/yash-tulaskar" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <p class="footer__copy">&#169; YASH TULASKAR. All rights reserved</p>
+
+    </footer>
+
+
+
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="js/main.js"></script>
+
+    <script src="../code.tidio.co_443/1jnhczowurapp0jdvi4vnbby5wuhhody.js" async></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"91fd7555f8fa9f75","version":"2025.1.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"50a647471dcc4ba1849d7b08d7534db6","b":1}'
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
